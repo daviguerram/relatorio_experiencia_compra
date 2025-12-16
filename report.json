@@ -1,0 +1,10 @@
+{
+  "etapas": {
+    "home": 13763,
+    "produto": 8065,
+    "checkout": 2750
+  },
+  "status": "OK",
+  "screenshot": "checkout.png",
+  "tituloFinal": "Informações - Gringa - checkout"
+}
