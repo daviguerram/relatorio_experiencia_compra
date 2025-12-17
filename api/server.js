@@ -52,7 +52,7 @@ app.post('/run-test', (req, res) => {
 });
 
 // Inicializa servidor
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`API Playwright rodando em http://localhost:${PORT}`);
 });
@@ -70,3 +70,4 @@ function deleteIfOlderThan(filePath, hours = 24) {
 // Antes de rodar o teste:
 deleteIfOlderThan(path.join(PROJECT_DIR, 'report.json'));
 deleteIfOlderThan(path.join(PROJECT_DIR, 'checkout.png'));
+
