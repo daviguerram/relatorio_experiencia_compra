@@ -20,8 +20,5 @@ jobs:
       - name: Instalar dependências
         run: npm install
 
-      - name: Instalar browsers do Playwright
-        run: npx playwright install
-
       - name: Rodar testes Playwright
         run: npx playwright test
